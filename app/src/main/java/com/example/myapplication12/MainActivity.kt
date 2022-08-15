@@ -2,6 +2,7 @@ package com.example.myapplication12
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import kotlinx.coroutines.NonCancellable.start
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -10,8 +11,12 @@ class MainActivity : AppCompatActivity() {
 
 
 
-
+        startMain()
         loadData()
+    }
+
+    private fun startMain() {
+
     }
 
     private fun loadData() {
